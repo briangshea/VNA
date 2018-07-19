@@ -2,21 +2,21 @@ EESchema Schematic File Version 4
 LIBS:VNA-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
 Sheet 20 23
-Title ""
-Date ""
-Rev ""
+Title "RF Chain"
+Date "2018-07-18"
+Rev "-"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 10250 3050 2    50   Input ~ 0
+Text HLabel 14950 8100 2    50   Input ~ 0
 LO
-Text HLabel 10250 2250 2    50   Input ~ 0
+Text HLabel 14950 7300 2    50   Input ~ 0
 IF
 Text HLabel 950  2250 0    50   Input ~ 0
 RF
@@ -34,7 +34,7 @@ F 5 "5%" V 1611 2250 50  0000 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	950  2250 1300 2250
+	950  2250 1100 2250
 $Comp
 L Analog_Switch:ADG918 U?
 U 1 1 5B4A8DFD
@@ -173,9 +173,7 @@ Wire Wire Line
 	4000 2800 4000 2650
 Wire Wire Line
 	2750 2650 4000 2650
-Wire Bus Line
-	3750 3550 950  3550
-Text HLabel 950  3550 0    50   Input ~ 0
+Text HLabel 1000 3100 0    50   Input ~ 0
 SCTL
 Text Label 2900 2650 0    50   ~ 0
 SW3
@@ -391,6 +389,53 @@ Wire Wire Line
 Connection ~ 5600 950 
 Wire Wire Line
 	5600 950  6200 950 
+$Comp
+L RF_Attenuator:Attenuator AT?
+U 1 1 5B4B84F3
+P 8150 2200
+AR Path="/5B3D5F68/5B49B277/5B4B84F3" Ref="AT?"  Part="1" 
+AR Path="/5B3D5F68/5B5A496C/5B4B84F3" Ref="AT?"  Part="1" 
+AR Path="/5B3D5F68/5B5C23CD/5B4B84F3" Ref="AT?"  Part="1" 
+AR Path="/5B3D5F68/5B5E71A2/5B4B84F3" Ref="AT?"  Part="1" 
+AR Path="/5B49D243/5B4B84F3" Ref="AT?"  Part="1" 
+F 0 "AT?" H 8150 2375 50  0000 C CNN
+F 1 "6dB" H 8150 2284 50  0000 C CNN
+F 2 "RF_Attenuators:PAT1220" H 8150 2250 50  0001 C CNN
+F 3 "http://www.passivecomponent.com/indexsea3/ASC_WA04P_V13.pdf" H 8150 2250 50  0001 C CNN
+	1    8150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2250 7900 2250
 Wire Bus Line
-	3750 2900 3750 3550
+	1000 3100 3750 3100
+$Comp
+L Device:R_US R?
+U 1 1 5B4FFC1A
+P 1100 2400
+F 0 "R?" H 1168 2446 50  0000 L CNN
+F 1 "49.9" H 1168 2355 50  0000 L CNN
+F 2 "" V 1140 2390 50  0001 C CNN
+F 3 "~" H 1100 2400 50  0001 C CNN
+	1    1100 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 2250
+Wire Wire Line
+	1100 2250 1300 2250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5B4FFCED
+P 1100 2600
+F 0 "#PWR?" H 1100 2350 50  0001 C CNN
+F 1 "GNDA" H 1105 2427 50  0000 C CNN
+F 2 "" H 1100 2600 50  0001 C CNN
+F 3 "" H 1100 2600 50  0001 C CNN
+	1    1100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2550 1100 2600
+Wire Bus Line
+	3750 2900 3750 3100
 $EndSCHEMATC
