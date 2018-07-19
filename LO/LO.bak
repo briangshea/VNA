@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+LIBS:VNA-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 19 23
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8300 2600 2    50   Input ~ 0
+LO1
+Text HLabel 1650 2600 0    50   Input ~ 0
+LO_CTRL
+Text HLabel 8300 3000 2    50   Input ~ 0
+LO2
+Text HLabel 8300 3400 2    50   Input ~ 0
+LO3
+Text HLabel 8300 3800 2    50   Input ~ 0
+LO4
+$Comp
+L Device:R_US R?
+U 1 1 5B49DD0A
+P 7950 2600
+F 0 "R?" V 8155 2600 50  0000 C CNN
+F 1 "33" V 8064 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7990 2590 50  0001 C CNN
+F 3 "~" H 7950 2600 50  0001 C CNN
+	1    7950 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5B49DD81
+P 7950 3000
+F 0 "R?" V 8155 3000 50  0000 C CNN
+F 1 "33" V 8064 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7990 2990 50  0001 C CNN
+F 3 "~" H 7950 3000 50  0001 C CNN
+	1    7950 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5B49DDD3
+P 7950 3400
+F 0 "R?" V 8155 3400 50  0000 C CNN
+F 1 "33" V 8064 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7990 3390 50  0001 C CNN
+F 3 "~" H 7950 3400 50  0001 C CNN
+	1    7950 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5B49DE11
+P 7950 3800
+F 0 "R?" V 8155 3800 50  0000 C CNN
+F 1 "33" V 8064 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7990 3790 50  0001 C CNN
+F 3 "~" H 7950 3800 50  0001 C CNN
+	1    7950 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 2600 7800 3000
+Wire Wire Line
+	7800 3400 7800 3800
+$Comp
+L Device:R_US R?
+U 1 1 5B49DF41
+P 7650 2800
+F 0 "R?" V 7855 2800 50  0000 C CNN
+F 1 "33" V 7764 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7690 2790 50  0001 C CNN
+F 3 "~" H 7650 2800 50  0001 C CNN
+	1    7650 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5B49DF94
+P 7650 3600
+F 0 "R?" V 7855 3600 50  0000 C CNN
+F 1 "33" V 7764 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7690 3590 50  0001 C CNN
+F 3 "~" H 7650 3600 50  0001 C CNN
+	1    7650 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 2800 7500 3600
+$Comp
+L Device:R_US R?
+U 1 1 5B49DFCB
+P 7350 3200
+F 0 "R?" V 7555 3200 50  0000 C CNN
+F 1 "33" V 7464 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7390 3190 50  0001 C CNN
+F 3 "~" H 7350 3200 50  0001 C CNN
+	1    7350 3200
+	0    -1   -1   0   
+$EndComp
+Text Notes 8400 2300 2    50   ~ 0
+4-Way Power Splitter 50Ohm
+$EndSCHEMATC

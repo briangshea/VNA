@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+LIBS:VNA-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 20 23
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9650 1850 2    50   Input ~ 0
+LO
+Text HLabel 9600 1450 2    50   Input ~ 0
+IF
+Text HLabel 1300 2100 0    50   Input ~ 0
+RF
+$Comp
+L Device:C C?
+U 1 1 5B49EFB9
+P 1800 2100
+F 0 "C?" V 2234 2100 50  0000 C CNN
+F 1 "1uF" V 2143 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1838 1950 50  0001 C CNN
+F 3 "~" H 1800 2100 50  0001 C CNN
+F 4 "50v" V 2052 2100 50  0000 C CNN "Voltage"
+F 5 "5%" V 1961 2100 50  0000 C CNN "Tolerance"
+	1    1800 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 2100 1650 2100
+$Comp
+L Analog_Switch:ADG918 U?
+U 1 1 5B4A8DFD
+P 2700 2100
+F 0 "U?" H 2700 2515 50  0000 C CNN
+F 1 "ADG918" H 2700 2424 50  0000 C CNN
+F 2 "" H 2700 2500 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG918_919.pdf" H 2700 2500 50  0001 C CNN
+	1    2700 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2100 2300 2100
+$Comp
+L power:GNDA #PWR?
+U 1 1 5B4A8EB1
+P 2700 2700
+F 0 "#PWR?" H 2700 2450 50  0001 C CNN
+F 1 "GNDA" H 2705 2527 50  0000 C CNN
+F 2 "" H 2700 2700 50  0001 C CNN
+F 3 "" H 2700 2700 50  0001 C CNN
+	1    2700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_Switch:ADG918 U?
+U 1 1 5B4A9FE5
+P 5300 2100
+F 0 "U?" H 5300 2515 50  0000 C CNN
+F 1 "ADG918" H 5300 2424 50  0000 C CNN
+F 2 "" H 5300 2500 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG918_919.pdf" H 5300 2500 50  0001 C CNN
+	1    5300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2100 4900 2100
+$Comp
+L power:GNDA #PWR?
+U 1 1 5B4AA08E
+P 5300 2700
+F 0 "#PWR?" H 5300 2450 50  0001 C CNN
+F 1 "GNDA" H 5305 2527 50  0000 C CNN
+F 2 "" H 5300 2700 50  0001 C CNN
+F 3 "" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Attenuator:Attenuator AT?
+U 1 1 5B4AA1B1
+P 3900 2250
+AR Path="/5B3D5F68/5B49B277/5B4AA1B1" Ref="AT?"  Part="1" 
+AR Path="/5B3D5F68/5B5A496C/5B4AA1B1" Ref="AT?"  Part="1" 
+AR Path="/5B3D5F68/5B5C23CD/5B4AA1B1" Ref="AT?"  Part="1" 
+AR Path="/5B3D5F68/5B5E71A2/5B4AA1B1" Ref="AT?"  Part="1" 
+AR Path="/5B49D243/5B4AA1B1" Ref="AT?"  Part="1" 
+F 0 "AT?" H 3900 2425 50  0000 C CNN
+F 1 "20dB" H 3900 2334 50  0000 C CNN
+F 2 "RF_Attenuators:PAT1220" H 3900 2300 50  0001 C CNN
+F 3 "http://www.passivecomponent.com/indexsea3/ASC_WA04P_V13.pdf" H 3900 2300 50  0001 C CNN
+	1    3900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2300 3650 2300
+Wire Wire Line
+	4150 2300 4900 2300
+$Comp
+L Device:C_Small C?
+U 1 1 5B4AA370
+P 3350 1700
+F 0 "C?" H 3442 1746 50  0000 L CNN
+F 1 "0.1uF" H 3442 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3350 1700 50  0001 C CNN
+F 3 "~" H 3350 1700 50  0001 C CNN
+	1    3350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5B4AA3E5
+P 4500 1700
+F 0 "C?" H 4592 1746 50  0000 L CNN
+F 1 "0.1uF" H 4592 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4500 1700 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1950 3150 1950
+Wire Wire Line
+	3150 1950 3150 1600
+Wire Wire Line
+	3150 1600 3350 1600
+Wire Wire Line
+	4850 1600 4850 1950
+Wire Wire Line
+	4850 1950 4900 1950
+Connection ~ 3350 1600
+Wire Wire Line
+	3350 1600 4500 1600
+Connection ~ 4500 1600
+Wire Wire Line
+	4500 1600 4850 1600
+$Comp
+L power:GNDA #PWR?
+U 1 1 5B4AA51C
+P 3350 1800
+F 0 "#PWR?" H 3350 1550 50  0001 C CNN
+F 1 "GNDA" H 3355 1627 50  0000 C CNN
+F 2 "" H 3350 1800 50  0001 C CNN
+F 3 "" H 3350 1800 50  0001 C CNN
+	1    3350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5B4AA5C9
+P 4500 1800
+F 0 "#PWR?" H 4500 1550 50  0001 C CNN
+F 1 "GNDA" H 4505 1627 50  0000 C CNN
+F 2 "" H 4500 1800 50  0001 C CNN
+F 3 "" H 4500 1800 50  0001 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2500 4900 2500
+Entry Wire Line
+	4100 2750 4200 2650
+Entry Wire Line
+	4100 2850 4200 2750
+Wire Wire Line
+	4200 2750 4650 2750
+Wire Wire Line
+	4650 2750 4650 2500
+Wire Wire Line
+	4200 2650 4350 2650
+Wire Wire Line
+	4350 2650 4350 2500
+Wire Wire Line
+	3100 2500 4350 2500
+Wire Bus Line
+	4100 3400 1300 3400
+Text HLabel 1300 3400 0    50   Input ~ 0
+SCTL
+Text Label 3250 2500 0    50   ~ 0
+SW3
+Text Label 4700 2500 0    50   ~ 0
+SW4
+Text GLabel 3000 1200 0    50   Input ~ 0
+VDDA_1V8
+Wire Wire Line
+	3000 1200 3150 1200
+Wire Wire Line
+	3150 1200 3150 1600
+Wire Bus Line
+	4100 2750 4100 3400
+Connection ~ 3150 1600
+$EndSCHEMATC
